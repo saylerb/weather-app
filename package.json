@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A weather app written in JavaScript",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack index.js public/bundle.js"
+  },
   "repository": "https://github.com/saylerb/weather-app",
   "author": "Brian Sayler",
   "license": "MIT",
