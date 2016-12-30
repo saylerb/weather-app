@@ -4,12 +4,17 @@
   "description": "A weather app written in JavaScript",
   "main": "index.js",
   "scripts": {
-    "build": "webpack index.js public/bundle.js"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": "https://github.com/saylerb/weather-app",
   "author": "Brian Sayler",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
     "webpack": "2.2.0-rc.3",
     "webpack-dev-server": "^1.16.2"
   },

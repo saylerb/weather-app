@@ -1,18 +1,15 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
+import React from 'react'
+import { render } from 'react-dom'
 
 var div = React.DOM.div
 var h1 = React.DOM.h1
 
-var LitComponent = React.createClass({
-  render: function () {
-    return (
-      div(null,
-        h1(null, "Welcome to Lit Weather!"),
-        h1(null, String.fromCharCode(0xD83D, 0xDD25))
-      )
-    )
-  }
-})
+const LitComponent = () => {
+  return (
+    <div>
+      <h1>Welcome to Lit Weather!</h1>
+      <h1>{String.fromCharCode(0xD83D, 0xDD25)}</h1>
+    </div>
+  )}
 
-ReactDOM.render(React.createElement(LitComponent), document.getElementById('app'))
+render(<LitComponent />, document.getElementById('app'))
