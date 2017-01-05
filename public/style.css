@@ -20,6 +20,10 @@ body {
   background: #FFF;
 }
 
+.welcome {
+  color: white;
+}
+
 .forcast {
   overflow: scroll;
   margin-top: 100px;
@@ -28,6 +32,13 @@ body {
 .city {
   font-weight: 500;
   font-size: 24px;
+}
+
+.debug {
+  position: absolute;
+  margin-top: 100px;
+  text-align: left;
+  width: 50%;
 }
 
 @media screen and ( min-width: 700px) {
